@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paarden Gallerij</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        background-color: #ededed;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .logo-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 10px solid orange;
+        object-fit: cover;
+        background: #fff;
+        z-index: 1;
+        position: relative;
+    }
+    .horse-card-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 8px solid orange;
+        object-fit: cover;
+        background: #fff;
+    }
+    .btn-custom {
+        background-color: orange;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    .btn-back {
+        background-color: #4d6b27;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        border: none;
+    }
+    .btn-back:hover {
+        background-color: #3d5520;
+        color: white;
+    }
+    footer {
+        background-color: #4d6b27;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        margin-top: auto;
+    }
+    .curved-title {
+        position: relative;
+        margin-bottom: -120px;
+        z-index: 2;
+    }
+    svg text {
+        font-family: Impact, sans-serif;
+        font-size: 40px;
+        fill: #222;
+    }
+    .horse-card {
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    .horse-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .horse-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #222;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .horse-info {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+</style>
+</head>
+<body class="text-center">
+    <div class="container py-5">
+        <svg class="curved-title" width="400" height="220" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path id="curve" d="M 50 190 A 150 150 0 0 1 350 190" />
+            </defs>
+            <text>
+                <textPath href="#curve" startOffset="50%" text-anchor="middle">GALLERIJ</textPath>
+            </text>
+        </svg>
+        <div class="mb-4">
+            <img src="https://mmg.whatsapp.net/m1/v/t24/An_Ge7vl0tW00aCz9Wkv8juzSlxcP55YHmJ5Uc7EAsgxO3fzppWKHScR-QmPgvMjtAW9Z3BcjEQt11VBu3mJ0gB9LKqEW06U7usLr1JWFl2Z9lEnuQ3jJbNbTpGPdW03PXVvS0MeutfvKrpA1uKE?_nc_gid=Clv5hxSWjf7xeOuGQZ6kcQ&_nc_oc=AdlILZPmFmPqSo0gmeRFZM9BZhaySWISQJ5SsI4sald4O9oeeE6WGfYy-sMOowqgGCE&ccb=10-5&oh=01_Q5Aa2QF82bnblZBat_nMSJi5WlLBC11aLs87aS43s5PasXLB_g&oe=68C1457B&_nc_sid=471a72" alt="Paard" class="logo-img">
+        </div>
+
+        <div class="mt-4 mb-4">
+            <button onclick="history.back()" class="btn btn-back px-4 py-2">← Terug naar hoofdpagina</button>
+        </div>
+
+        <!-- Paarden Gallerij -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="horse-card">
+                    <img src="https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png" alt="Thunder" class="horse-card-img">
+                    <div class="horse-name">Thunder</div>
+                    <div class="horse-info">
+                        Ras: Arabier<br>
+                        Leeftijd: 8 jaar<br>
+                        Kleur: Zwart<br>
+                        Karakter: Energiek en speels
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="horse-card">
+                    <img src="https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png" alt="Bella" class="horse-card-img">
+                    <div class="horse-name">Bella</div>
+                    <div class="horse-info">
+                        Ras: Fjord<br>
+                        Leeftijd: 12 jaar<br>
+                        Kleur: Vos<br>
+                        Karakter: Rustig en betrouwbaar
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="horse-card">
+                    <img src="https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png" alt="Storm" class="horse-card-img">
+                    <div class="horse-name">Storm</div>
+                    <div class="horse-info">
+                        Ras: Friese<br>
+                        Leeftijd: 6 jaar<br>
+                        Kleur: Zwart<br>
+                        Karakter: Majestueus en trots
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="horse-card">
+                    <img src="https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png" alt="Luna" class="horse-card-img">
+                    <div class="horse-name">Luna</div>
+                    <div class="horse-info">
+                        Ras: Haflinger<br>
+                        Leeftijd: 5 jaar<br>
+                        Kleur: Palomino<br>
+                        Karakter: Vriendelijk en zachtaardig
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="horse-card">
+                    <img src="https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png" alt="Max" class="horse-card-img">
+                    <div class="horse-name">Max</div>
+                    <div class="horse-info">
+                        Ras: Quarter Horse<br>
+                        Leeftijd: 10 jaar<br>
+                        Kleur: Bruin<br>
+                        Karakter: Intelligent en leergierig
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="horse-card">
+                    <img src="https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png" alt="Rosie" class="horse-card-img">
+                    <div class="horse-name">Rosie</div>
+                    <div class="horse-info">
+                        Ras: Shetlander<br>
+                        Leeftijd: 15 jaar<br>
+                        Kleur: Schimmel<br>
+                        Karakter: Eigenwijs maar lief
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="https://www.whatsapp.com/channel/0029Vb6ORJgCMY0AyxtnjB33" class="btn btn-custom px-4 py-2" target="_blank" rel="noopener noreferrer">Volg ons op WhatsApp!</a>
+        </div>
+        <div class="mt-5">
+            <a href="/index.html" class="btn btn-secondary px-4 py-2" target="_blank" rel="noopener noreferrer">Terug naar home</a>
+        </div>
+    </div>
+    <footer>
+        Gemaakt door Zzzaai Websites
+    </footer>
+</body>
+</html>
