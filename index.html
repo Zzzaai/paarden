@@ -110,6 +110,36 @@
         width: 100%;
     }
     
+    /* Styling voor de kanaal card */
+    .channel-card {
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 30px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .channel-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    
+    .channel-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        object-fit: cover;
+        border: 3px solid orange;
+    }
+    
+    .channel-text {
+        font-size: clamp(14px, 3.5vw, 16px);
+        line-height: 1.6;
+        color: #444;
+        text-align: left;
+    }
+    
     /* Extra responsive fixes voor kleine schermen */
     @media (max-width: 576px) {
         .container {
@@ -131,6 +161,15 @@
         .mt-3, .mt-4 {
             margin-top: 1.5rem !important;
         }
+        
+        .channel-img {
+            width: 140px;
+            height: 140px;
+        }
+        
+        .channel-text {
+            font-size: 14px;
+        }
     }
     
     /* Voor zeer kleine schermen */
@@ -147,6 +186,17 @@
         
         svg text {
             font-size: 22px;
+        }
+        
+        .channel-card .row {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .channel-img {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px auto;
         }
     }
 </style>
@@ -172,12 +222,35 @@
         <div class="mt-3 centerc">
             <a href="https://www.whatsapp.com/channel/0029Vb6ORJgCMY0AyxtnjB33" class="btn btn-custom" target="_blank" rel="noopener noreferrer">Volg ons op WhatsApp!</a>
         </div>
-        <div class="mt-3">
-            <a>Volg je ons kanaal zet hem dan op je status<br>Ik heet Nien En dit kanaal heb ik samen met Han<br>Ik heet Han En ik heb dit kanaal samen met Nien<br>We zeg er alles over paarden en we zitten alle twee op een andere manege en laten filmpjes zien van onze rijlessen🐴🐴🐴 <br>✅ 5 volgers. Minimini kanalen competitie <br>✅ 10 volgers. Kleine winactie <br>✅ 20 volgers. Manege tour<br>✅ 30 volgers. Kleine paardentour<br>☑️ 40 volgers. Manege tour<br>☑️ 50 volgers. Kanalen competitie <br>☑️ 60 volgers. Paarden tour <br>☑️ 70 volgers. Kanalen competitie of winactie <br>☑️ 80 volgers. Paarden tour <br>☑️ 90 volgers. Winactie <br>☑️ 100 volgers. Winactie en kanalen competitie</a>
+        
+        <!-- Kanaal beschrijving card -->
+        <div class="channel-card">
+            <div class="row align-items-center g-3">
+                <div class="col-auto">
+                    <img src="https://mmg.whatsapp.net/m1/v/t24/An_Ge7vl0tW00aCz9Wkv8juzSlxcP55YHmJ5Uc7EAsgxO3fzppWKHScR-QmPgvMjtAW9Z3BcjEQt11VBu3mJ0gB9LKqEW06U7usLr1JWFl2Z9lEnuQ3jJbNbTpGPdW03PXVvS0MeutfvKrpA1uKE?_nc_gid=bGtco172KG1Vhi9NLpJAKA&_nc_oc=Admo5BUiPCBdXOxV9bdd4qOd2GG_-FtNj_O4Do7dhiXiYoMR4Yo28ldxpgSWaPBDM2k&ccb=10-5&oh=01_Q5Aa2QHfkVR-YbrPPe9AbUx-xgDN9M6viv88mF8LKp_la8AV7A&oe=68C3B03B&_nc_sid=471a72" alt="WhatsApp Kanaal" class="channel-img">
+                </div>
+                <div class="col">
+                    <div class="channel-text">
+                        Volg je ons kanaal zet hem dan op je status<br>
+                        Ik heet Nien En dit kanaal heb ik samen met Han<br>
+                        Ik heet Han En ik heb dit kanaal samen met Nien<br>
+                        We zeg er alles over paarden en we zitten alle twee op een andere manege en laten filmpjes zien van onze rijlessen🐴🐴🐴<br><br>
+                        <strong>Doelen:</strong><br>
+                        ✅ 5 volgers. Minimini kanalen competitie<br>
+                        ✅ 10 volgers. Kleine winactie<br>
+                        ✅ 20 volgers. Manege tour<br>
+                        ✅ 30 volgers. Kleine paardentour<br>
+                        ☑️ 40 volgers. Manege tour<br>
+                        ☑️ 50 volgers. Kanalen competitie<br>
+                        ☑️ 60 volgers. Paarden tour<br>
+                        ☑️ 70 volgers. Kanalen competitie of winactie<br>
+                        ☑️ 80 volgers. Paarden tour<br>
+                        ☑️ 90 volgers. Winactie<br>
+                        ☑️ 100 volgers. Winactie en kanalen competitie
+                    </div>
+                </div>
+            </div>
         </div>
-</div>
-</div>
-</div>
     </div>
     <footer class="centerc">
         <strong>Gemaakt door Zzzaai Websites | <a href="https://whatsapp.com/channel/0029Vb7gicTEVccBObfNyj2Q" target="_blank" rel="noopener noreferrer" style="color:chocolate">Volg ons op WhatsApp!</a></strong>
